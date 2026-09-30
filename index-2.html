@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#26381f"><title>Yorkshire Three Peaks | Team Hub</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#edf0e9;color:#182116;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}.app{max-width:720px;margin:auto;background:#f7f3e8;min-height:100vh}.hero{padding:28px 20px 24px;color:white;background:linear-gradient(#162719cc,#16271988),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85') center/cover}.tag{font-size:11px;font-weight:900;letter-spacing:.1em}.hero h1{font-size:40px;line-height:.95;margin:12px 0}.hero p{font-weight:700}.count{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.count div{background:#0d1a0dcc;border-radius:10px;text-align:center;padding:8px}.count b{display:block;font-size:20px}.count small{text-transform:uppercase;font-size:9px}nav{position:sticky;top:0;background:white;padding:8px;display:flex;gap:6px;overflow:auto;z-index:2}nav a{white-space:nowrap;text-decoration:none;color:#26381f;background:#edf1e8;padding:8px 11px;border-radius:20px;font-size:12px;font-weight:800}section{padding:20px}.card{background:white;border:1px solid #dde2d8;border-radius:16px;padding:16px;margin-bottom:12px;box-shadow:0 3px 10px #0000000b}.eyebrow{font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#48633c}h2{margin:4px 0 14px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#26381f;color:white;padding:13px 5px;border-radius:12px;text-align:center}.stat b{display:block;font-size:20px}.stat small{font-size:9px}.peak{display:flex;justify-content:space-between;padding:11px;background:#f0f2ec;border-radius:10px;margin:7px 0}.charity{display:grid;grid-template-columns:1fr 1fr;gap:8px}.charity div{background:white;padding:14px;border-radius:12px}.progress{height:12px;background:#ddd;border-radius:99px;overflow:hidden}.bar{height:100%;width:0;background:#a9d34a}.check{display:block;padding:10px 0;border-bottom:1px solid #eee}.check input{width:19px;height:19px;vertical-align:middle;accent-color:#26381f}details{padding:11px 0;border-top:1px solid #eee}summary{font-weight:800}button{border:0;border-radius:11px;padding:11px 14px;font-weight:900;background:#402d72;color:white}footer{text-align:center;padding:25px;color:#687064;font-size:12px}.share{position:fixed;right:16px;bottom:16px;border-radius:30px;box-shadow:0 6px 20px #0003}@media(max-width:430px){.hero h1{font-size:35px}.charity{grid-template-columns:1fr}}
+</style></head><body><div class="app">
+<header class="hero"><div class="tag">🥾 TEAM YORKSHIRE THREE PEAKS</div>
+<h1>Three Peaks.<br>One Team.<br>Two Great Causes.</h1><p>Saturday 17th April 2027 · Yorkshire Dales</p>
+<div class="count" id="count"></div></header>
+<nav><a href="#event">Event</a><a href="#route">Route</a><a href="#fundraising">Fundraising</a><a href="#training">Training</a><a href="#kit">Kit</a><a href="#day">Event Day</a></nav>
+
+<section id="event"><div class="eyebrow">The challenge</div><h2>24 miles across the Yorkshire Dales</h2>
+<div class="stats"><div class="stat"><b>24</b><small>MILES</small></div><div class="stat"><b>~1,600m</b><small>ASCENT</small></div><div class="stat"><b>3</b><small>PEAKS</small></div></div></section>
+
+<section id="route"><div class="card"><div class="eyebrow">The three peaks</div><h2>Route at a glance</h2>
+<div class="peak"><b>Pen-y-ghent</b><strong>694m</strong></div><div class="peak"><b>Whernside</b><strong>736m</strong></div><div class="peak"><b>Ingleborough</b><strong>723m</strong></div></div></section>
+
+<section id="fundraising"><div class="eyebrow">Two great causes</div><h2>£2,000 fundraising target</h2>
+<div class="card"><div style="display:flex;justify-content:space-between"><b>Progress</b><b id="raised">£0</b></div><div class="progress"><div class="bar" id="bar"></div></div><p>£2,000 target · split 50/50</p><button onclick="setRaised()">Update amount</button></div>
+<div class="charity"><div><b>💙 Andy’s Man Club</b><br>50% of funds</div><div><b>🎗️ Cancer Research UK</b><br>50% of funds</div></div></section>
+
+<section id="training"><div class="eyebrow">Training</div><h2>8-week build-up</h2><div class="card">
+<details open><summary>Weeks 1–2 · Get moving</summary><p>2 × 30–45 min weekday walks + 1 × 1–1.5 hour weekend walk.</p></details>
+<details><summary>Weeks 3–4 · Time & hills</summary><p>2 × 45 min walks + 1 × 2–2.5 hour weekend walk. Add hills and start carrying your backpack.</p></details>
+<details><summary>Weeks 5–6 · Endurance</summary><p>2 × 45–60 min walks + 1 × 3–4 hour weekend walk. Practise food, water and uneven ground.</p></details>
+<details><summary>Week 7 · Rehearsal</summary><p>Easy walks plus one 5–6 hour long walk using your event kit.</p></details>
+<details><summary>Week 8 · Taper</summary><p>Two easy 30-minute walks. Prioritise recovery.</p></details></div></section>
+
+<section id="kit"><div class="eyebrow">Prepare properly</div><h2>Kit checklist</h2><div class="card" id="checks">
+<label class="check"><input type="checkbox"> Broken-in walking boots</label><label class="check"><input type="checkbox"> Walking socks + spare pair</label><label class="check"><input type="checkbox"> Waterproof jacket & trousers</label><label class="check"><input type="checkbox"> Backpack</label><label class="check"><input type="checkbox"> Water + bottles/bladder</label><label class="check"><input type="checkbox"> Food/snacks</label><label class="check"><input type="checkbox"> Blister treatment</label><label class="check"><input type="checkbox"> Phone + power bank</label><label class="check"><input type="checkbox"> First-aid essentials</label></div></section>
+
+<section id="day"><div class="eyebrow">Event day</div><h2>Saturday 17 April 2027</h2><div class="card">
+<p><b>🥾 Start prepared.</b> Eat beforehand and arrive with water and food packed.</p><p><b>💧 Hydrate little and often.</b></p><p><b>👥 Stay together.</b> This is a team challenge.</p><p><b>📱 Keep your phone charged.</b> Bring a power bank.</p></div></section>
+<footer>Yorkshire Three Peaks Charity Challenge · 17 April 2027<br>Andy’s Man Club + Cancer Research UK</footer></div>
+<button class="share" onclick="share()">↗ Share with WhatsApp</button>
+<script>
+const date=new Date("2027-04-17T08:00:00+01:00");
+function tick(){let x=Math.max(0,date-new Date()),d=Math.floor(x/864e5),h=Math.floor(x/36e5)%24,m=Math.floor(x/6e4)%60,s=Math.floor(x/1e3)%60;
+document.getElementById("count").innerHTML=[[""+d,"Days"],[h,"Hours"],[m,"Mins"],[s,"Secs"]].map(a=>`<div><b>${a[0]}</b><small>${a[1]}</small></div>`).join("")}tick();setInterval(tick,1000);
+function share(){let u=location.href;if(navigator.share)navigator.share({title:"Yorkshire Three Peaks – Team Hub",text:"Yorkshire Three Peaks charity challenge 🥾",url:u});else navigator.clipboard.writeText(u).then(()=>alert("Link copied"))}
+function setRaised(){let v=prompt("Amount raised so far","0");if(v===null)return;let n=Math.max(0,Math.min(2000,Number(v)||0));localStorage.r=n;render()}
+function render(){let n=Number(localStorage.r||0);document.getElementById("raised").textContent="£"+n.toLocaleString("en-GB");document.getElementById("bar").style.width=n/20+"%"}render();
+document.querySelectorAll("#checks input").forEach((e,i)=>{e.checked=localStorage["k"+i]==="1";e.onchange=()=>localStorage["k"+i]=e.checked?"1":"0"});
+</script></body></html>
